@@ -54,10 +54,10 @@ export default function Calculator() {
     <div>
       <div className="border-2 p-2">{window}</div>
       <div className="grid grid-cols-4 gap-2 w-36">
-        {buttons.map((button) => (
-          <div onClick={() => handleClick(button)} key={button}>
-            {button}
-          </div>
+        {buttons.map((b) => (
+          <button onClick={() => handleClick(b)} key={b}>
+            {b}
+          </button>
         ))}
       </div>
     </div>

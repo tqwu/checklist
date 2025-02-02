@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: " Checklist",
-  description: "A simple checklist app",
+  title: "Projects",
+  description: "Simple starter projects in React TypeScript",
 };
 
 export default function RootLayout({

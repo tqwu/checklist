@@ -1,11 +1,13 @@
 "use client";
 
 import Checklist from "@/components/checklist";
+import Calculator from "@/components/calculator";
 
 export default function Home() {
   return (
-    <main>
+    <div className="grid gap-5 p-5">
       <Checklist />
-    </main>
+      <Calculator />
+    </div>
   );
 }

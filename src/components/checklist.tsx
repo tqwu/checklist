@@ -22,20 +22,20 @@ export default function Checklist() {
 
   return (
     <div>
-    <input
+      <input
         value={newTask}
         onChange={(e) => setNewTask(e.target.value)}
         placeholder="Enter task..."
-        />
-    <button onClick={addTask}>Submit</button>
-    <div>
+      />
+      <button onClick={addTask}>Submit</button>
+      <div>
         {tasks.map((task) => (
-        <div key={task.id}>
+          <div key={task.id}>
             <span>{task.text}</span>
             <button onClick={() => deleteTask(task.id)}>Delete</button>
-        </div>
+          </div>
         ))}
-    </div>
+      </div>
     </div>
   );
 }

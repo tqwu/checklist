@@ -45,7 +45,7 @@ export default function Calculator() {
       const computed = eval(input).toString();
       setWindow(computed);
     } catch {
-      setWindow("Error");
+      setWindow("Enter a new equation");
     }
     setInput("");
   };
